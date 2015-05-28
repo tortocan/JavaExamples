@@ -31,8 +31,21 @@ public class Personas {
 	}
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return "Nombre: " + this.nombre + ", Edad: " + this.edad ;
+	}
+	
+	@Override
+	public boolean equals(Object p) {
+		boolean isSame = false;
+		isSame = this == p;
+		//Personas guest = (Personas) p;
+		Personas guest = (Personas) p;
+		if(this.nombre == guest.nombre &&
+			this.edad == guest.edad)
+		{
+			isSame = true;
+		}
+		return isSame;
 	}
 }
 

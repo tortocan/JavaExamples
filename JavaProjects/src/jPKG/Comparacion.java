@@ -26,8 +26,9 @@ public class Comparacion extends Personas{
 		// TODO Auto-generated constructor stub
 	}
 
-	/**Compares the left side of the string 
-	 * with the right side and returns an boolean value*/
+	/**Compares from the left side of the string 
+	 * to the middle the right side to the middle
+	 * and returns an boolean value*/
 	private static boolean CompareString (String cad)
 	{
 		boolean bd = true;
