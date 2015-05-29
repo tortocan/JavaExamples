@@ -22,13 +22,14 @@ public class FileRW {
 
 	public FileRW(String pathString) throws FileNotFoundException, IOException
 	{
+		
 		this.pathString = pathString;	 
 	}
 	
-	public boolean arrToFile(String [] arrf) throws IOException {
+	public void arrToFile(String [] arrf , String fileName,String outPutType) throws IOException {
 		// Create a BufferedWriter around a FileWriter.
 		// ... Write to an output text file.
-		BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"));
+		BufferedWriter writer = new BufferedWriter(new FileWriter(fileName + "." + outPutType));
 		boolean FileCreated = false;
 		for (String line : arrf)
 		{
@@ -37,7 +38,11 @@ public class FileRW {
 			writer.newLine();
 		}
 		writer.close();
-		return FileCreated;
+		if (FileCreated) {
+			System.out.println("The file "+ fileName +  " was exported in an ."
+					+ outPutType + " type.");
+		}
+		
 	}
 	public String [] fileToArray() throws FileNotFoundException, IOException
 	{

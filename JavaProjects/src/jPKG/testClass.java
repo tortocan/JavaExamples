@@ -17,15 +17,14 @@ public class testClass extends FileRW {
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		f = new FileRW("EJERCICIOS_REPASO.txt");
 		String[] array = f.fileToArray();
-		System.out.println(array);
-		for (String cadena : array)
-		{
-			System.out.println(cadena);
-		}
-		
-		boolean isCreated =f.arrToFile(array);
-		System.out.println(isCreated);
-	}
-	
 
+//		for (String cadena : array)
+//		{
+//			System.out.println(cadena);
+//		}		
+		f.arrToFile(array,"test","csv");
+		f.arrToFile(array,"test","txt");
+		f.arrToFile(array,"test2","doc");
+		f.arrToFile(array,"test3","xls");
+	}
 }

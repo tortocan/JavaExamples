@@ -1,9 +1,17 @@
 package jPKG;
+
+import java.io.Serializable;
+
 //Model for creating classes in Java
 //package 
 //import 
 
-public class Personas {
+public class Personas implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int edad;
 	private String nombre;
 	
