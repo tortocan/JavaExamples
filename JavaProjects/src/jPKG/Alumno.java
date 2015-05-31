@@ -36,9 +36,9 @@ public class Alumno extends Personas {
 		salida.close();
 		
 		
-		ObjectInputStream entrada =new ObjectInputStream (new FileInputStream("media3.dat"));
-		p = (Personas)entrada.read();
-		entrada.close();
+//		ObjectInputStream entrada =new ObjectInputStream (new FileInputStream("media3.dat"));
+//		p = (Personas)entrada.read();
+//		entrada.close();
 
 	}
 	
