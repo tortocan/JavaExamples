@@ -1,4 +1,4 @@
-package com.lynda.upandrunningwithjava;
+package runningWithJava;
 /** 
  * 
  * @author george
