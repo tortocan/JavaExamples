@@ -15,8 +15,8 @@ package runningWithJava;
  *to the project will be:
  *"C:\Users\"UserName"\git\"ProjectName"\src"
  *
- *Example:javac com\lynda\\upandrunningwithjava\"ClassName".java for complying your code.
- *Example:java com\lynda\\upandrunningwithjava\"ClassName".java for running your code now you if all works
+ *Example:javac "PackageName"\"ClassName".java for complying your code.
+ *Example:java "PackageName"."ClassName" for running your code now you if all works
  *fine you should get an response from your code in this case the response is an output print of 
  *Hello from commandline!
  */
